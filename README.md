@@ -1,80 +1,73 @@
-Letter Automation System
-Overview
+1. Project Overview
 
-The Letter Automation System is a full-stack web application that allows users to generate different types of letters automatically using predefined templates and user-provided inputs.
-The system reduces manual effort by generating clean, structured, and print-ready letters.
+The Letter Automation System allows users to generate formal and informal letters automatically. Users can log in, choose a letter type from the dashboard, fill a dynamic form, and generate a structured letter. All user inputs and generated letters are stored in a database for future access.
 
-Users can log in, select a letter type, fill a form, generate a formatted letter, and view their history.
+This system reduces repetitive manual writing and ensures consistent formatting.
 
-Features
-User Authentication
+2. Features
+User Features
 
-Secure login
+Secure login system
 
-Session management
+Dashboard displaying multiple letter types
 
-User-specific data handling
+Dynamic forms for each letter type
 
-Letter Types Dashboard
+Auto-generated letter in a formatted structure
 
-Multiple categories such as:
+Print-ready output
 
-Birthday Wish
+User-specific letter history
 
-Congratulations
+View previously generated letters
 
-Invitation
+Admin Features (if included)
 
-Leave Letter
+View user statistics
 
-Each type opens its own input form
+Manage templates
 
-Template-Based Letter Generation
+Track generated letters
 
-Templates stored in the database
-
-Backend replaces placeholders with user inputs
-
-Automatically generates a clean formatted letter
-
-User Input Handling
-
-Inputs captured for each letter type
-
-Data stored for history tracking
-
-Generated Letter
-
-Displays final formatted content
-
-Option to print
-
-Stored in database for future reference
-
-History Page
---------------------------------------------------------------------------------------------
-Project Architecture
+3. System Architecture
 Frontend
 
-HTML
+Static pages created using HTML, CSS, and JavaScript
 
-CSS
+Separate pages for each letter type
 
-JavaScript
+AJAX/Fetch API calls to backend
 
-Separate pages for each letter type, dashboard, history, and generated output
+Client-side validation
 
 Backend
 
-Node.js
+Node.js with Express.js
 
-Express.js
+RESTful API structure
 
-Routes for authentication, fetching templates, processing user input, and saving letters
+Session handling for user authentication
+
+Template processing (placeholder replacement)
+
+Database operations
 
 Database
 
-MySQL
-View all previously generated letters
+MySQL relational database
 
-Revisit or reprint any letter
+Stores user info, templates, user inputs, and generated letters
+
+4. Technology Stack
+
+Frontend:
+HTML, CSS, JavaScript
+
+Backend:
+Node.js, Express.js
+
+Database:
+MySQL
+
+Tools:
+Git, GitHub, VS Code
